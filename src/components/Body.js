@@ -1,7 +1,4 @@
 import React, { useContext } from "react";
-import RestaurantCard, { withOfferLabel } from "./RestaurantCard";
-import resList from "../utils/mockData";
-import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";

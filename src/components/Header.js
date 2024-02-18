@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import FoodHavenIcon from "../assests/FoodHaven.png";
-import CartIcon from "../assests/Cart.png";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
@@ -11,13 +10,11 @@ const Header = () => {
   useEffect(() => {}, [btnNameReact]);
 
   const { loggedInUser } = useContext(UserContext);
-  // console.log(loggedInUser);
 
   // Subscribing to the store using the Selector
   const cartItems = useSelector((store) => store.cart.items);
   // This useSelector gives access to our store, but we will
   // now tell what portion of your store we need access to
-  // console.log(cartItems);
 
   return (
     <header className="bg-white shadow-md p-4 sm:px-6 lg:px-8">
