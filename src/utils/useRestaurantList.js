@@ -16,24 +16,24 @@ const useRestaurantList = () => {
       // convert the data to json
       const json = await data.json();
       setListOfRestaurants(
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants || []
       );
       setFilteredRestaurant(
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants || []
       );
-      console.log(
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-      );
+      // console.log(
+      //   json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+      //     ?.restaurants
+      // );
       // console.log(
       //   json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
       //     ?.restaurants
       // );
       // resData?.info?.aggregatedDiscountInfoV3;
       console.log(
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
     } catch (error) {

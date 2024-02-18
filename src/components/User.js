@@ -4,10 +4,10 @@ const User = (props) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("Use Effect");
+    // console.log("Use Effect");
   }, []);
   // Dependable array for making the call once.
-  console.log("render");
+  // console.log("render");
   return (
     <div className="user-card">
       <h1>Count = {count}</h1>
